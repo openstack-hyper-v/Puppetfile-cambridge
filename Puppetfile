@@ -16,10 +16,10 @@ mod 'puppetlabs/apache', :git => "#{base_url}/puppetlabs/puppetlabs-apache", :re
 mod 'puppetlabs/stdlib', :git => "#{base_url}/puppetlabs/puppetlabs-stdlib", :ref => 'master'
 mod 'puppetlabs/apt', :git => "#{base_url}/puppetlabs/puppetlabs-apt", :ref => 'master'
 mod 'puppetlabs/vcsrepo', :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo", :ref => 'master'
+mod 'puppetlabs/mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers", :ref => 'master'
+mod 'puppetlabs/registry', :git => "#{base_url}/puppetlabs/puppetlabs-registry"
 
 # stephenrjohnson
-# this what I am testing Puppet 3.2 deploys with
-# I am pointing it at me until my patch is accepted
 mod 'stephenjohrnson/puppet', :git => "#{base_url}/stephenrjohnson/puppetlabs-puppet", :ref => 'master'
 
 # upstream is ripienaar
@@ -32,7 +32,7 @@ mod 'cprice404/inifile', :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
 mod 'saz/rsyslog', :git => "#{base_url}/saz/puppet-rsyslog"
 
 # Upstream  Quartermaster
-mod 'ppouliot/quartermaster', :git => "#{base_url}/ppouliot/puppet-quartermaster"
+mod 'openstack-hyper-v/quartermaster', :git => "#{base_url}/openstack-hyper-v/puppet-quartermaster"
 
 # Jenkins
 
@@ -50,10 +50,7 @@ mod 'openstack-hyper-v/petools', :git => "#{base_url}/openstack-hyper-v/puppet-p
 # Packstack
 mod 'openstack-hyper-v/packstack', :git => "#{base_url}/openstack-hyper-v/puppet-packstack"
 
-
 # OpenStack Hyper-V Modules
 mod 'puppetlabs/powershell', :git => "#{base_url}/joshcooper/puppetlabs-powershell"
-mod 'puppetlabs/registry', :git => "#{base_url}/puppetlabs/puppetlabs-registry"
-mod 'cprice404/inifile', :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
 mod 'basti1302/windows-path', :git => "#{base_url}/basti1302/puppet-windows-path"
 mod 'openstack-hyper-v/openstack_hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-openstack_hyper_v"
