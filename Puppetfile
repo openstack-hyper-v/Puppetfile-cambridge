@@ -7,6 +7,8 @@ base_url = "#{git_protocol}://github.com"
 # 
 branch_name = 'origin/grizzly'
 
+mod 'manifests', :git => "#{base_url}/openstack-hyper-v/puppet-manifests"
+
 # PuppetLabs
 mod 'puppetlabs/postgresql', :git => "#{base_url}/puppetlabs/puppetlabs-postgresql", :ref => 'master'
 mod 'puppetlabs/puppetdb', :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb", :ref => 'master'
