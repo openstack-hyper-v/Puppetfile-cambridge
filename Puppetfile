@@ -7,18 +7,19 @@ base_url = "#{git_protocol}://github.com"
 # 
 branch_name = 'origin/grizzly'
 
-mod 'manifests', :git => "#{base_url}/openstack-hyper-v/puppet-manifests"
+#mod 'manifests', :git => "#{base_url}/openstack-hyper-v/puppet-manifests"
 
 # PuppetLabs
-mod 'puppetlabs/postgresql', :git => "#{base_url}/puppetlabs/puppetlabs-postgresql", :ref => 'master'
-mod 'puppetlabs/puppetdb', :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb", :ref => 'master'
-mod 'puppetlabs/firewall', :git => "#{base_url}/puppetlabs/puppetlabs-firewall", :ref => 'master'
-mod 'puppetlabs/ntp', :git => "#{base_url}/puppetlabs/puppetlabs-ntp", :ref => 'master'
-mod 'puppetlabs/apache', :git => "#{base_url}/puppetlabs/puppetlabs-apache", :ref => 'master'
-mod 'puppetlabs/stdlib', :git => "#{base_url}/puppetlabs/puppetlabs-stdlib", :ref => 'master'
-mod 'puppetlabs/apt', :git => "#{base_url}/puppetlabs/puppetlabs-apt", :ref => 'master'
-mod 'puppetlabs/vcsrepo', :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo", :ref => 'master'
-mod 'puppetlabs/mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers", :ref => 'master'
+mod 'puppetlabs/postgresql', :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
+#mod 'puppetlabs/puppetdb', :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
+mod 'puppetlabs/puppetdb', :git => "#{base_url}/openstack-hyper-v/puppetlabs-puppetdb"
+mod 'puppetlabs/firewall', :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
+mod 'puppetlabs/ntp', :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
+mod 'puppetlabs/apache', :git => "#{base_url}/puppetlabs/puppetlabs-apache"
+mod 'puppetlabs/stdlib', :git => "#{base_url}/puppetlabs/puppetlabs-stdlib"
+mod 'puppetlabs/apt', :git => "#{base_url}/puppetlabs/puppetlabs-apt"
+mod 'puppetlabs/vcsrepo', :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo"
+mod 'puppetlabs/mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers"
 mod 'puppetlabs/registry', :git => "#{base_url}/puppetlabs/puppetlabs-registry"
 
 # stephenrjohnson
@@ -38,7 +39,7 @@ mod 'openstack-hyper-v/quartermaster', :git => "#{base_url}/openstack-hyper-v/pu
 
 # Jenkins
 
-mod "jenkins", :git => "#{base_url}/ppouliot/puppet-jenkins"
+mod "rtyler/jenkins", :git => "#{base_url}/openstack-hyper-v/puppet-jenkins"
 
 # ipam
 mod 'ppouliot/dhcp', :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
@@ -53,6 +54,8 @@ mod 'openstack-hyper-v/petools', :git => "#{base_url}/openstack-hyper-v/puppet-p
 mod 'openstack-hyper-v/packstack', :git => "#{base_url}/openstack-hyper-v/puppet-packstack"
 
 # OpenStack Hyper-V Modules
-mod 'puppetlabs/powershell', :git => "#{base_url}/joshcooper/puppetlabs-powershell"
-mod 'basti1302/windows-path', :git => "#{base_url}/basti1302/puppet-windows-path"
-mod 'openstack-hyper-v/openstack_hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-openstack_hyper_v"
+#mod 'puppetlabs/powershell', :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+#mod 'basti1302/windows-path', :git => "#{base_url}/basti1302/puppet-windows-path"
+#mod 'openstack-hyper-v/openstack_hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-openstack_hyper_v"
+
+mod 'openstack-hyper-v/basenode', :git => "#{base_url}/openstack-hyper-v/basenode"
