@@ -58,4 +58,5 @@ mod 'openstack-hyper-v/packstack', :git => "#{base_url}/openstack-hyper-v/puppet
 #mod 'basti1302/windows-path', :git => "#{base_url}/basti1302/puppet-windows-path"
 #mod 'openstack-hyper-v/openstack_hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-openstack_hyper_v"
 
-mod 'openstack-hyper-v/basenode', :git => "#{base_url}/openstack-hyper-v/basenode"
+mod 'openstack-hyper-v/basenode', :git => "#{base_url}/openstack-hyper-v/puppet-basenode"
+mod 'openstack-hyper-v/dell_openmanage', :git => "#{base_url}/openstack-hyper-v/puppet-dell_openmanage"
