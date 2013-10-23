@@ -54,9 +54,8 @@ mod 'openstack-hyper-v/petools', :git => "#{base_url}/openstack-hyper-v/puppet-p
 mod 'openstack-hyper-v/packstack', :git => "#{base_url}/openstack-hyper-v/puppet-packstack"
 
 # OpenStack Hyper-V Modules
-mod 'puppetlabs/powershell', :git => "#{base_url}/joshcooper/puppetlabs-powershell"
-mod 'basti1302/windows-path', :git => "#{base_url}/basti1302/puppet-windows-path"
-mod 'openstack-hyper-v/openstack_hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-openstack_hyper_v"
+mod 'joshcooper/powershell', :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+mod 'basti1302/windows_path', :git => "#{base_url}/basti1302/puppet-windows-path"
 
 mod 'openstack-hyper-v/basenode', :git => "#{base_url}/openstack-hyper-v/puppet-basenode"
 mod 'openstack-hyper-v/dell_openmanage', :git => "#{base_url}/openstack-hyper-v/puppet-dell_openmanage"
@@ -68,3 +67,4 @@ mod 'openstack-hyper-v/windows_chrome', :git => "#{base_url}/openstack-hyper-v/p
 mod 'openstack-hyper-v/windows_java', :git => "#{base_url}/openstack-hyper-v/puppet-windows_java"
 mod 'openstack-hyper-v/windows_python', :git => "#{base_url}/openstack-hyper-v/puppet-windows_python"
 mod 'openstack-hyper-v/hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-hyper_v"
+mod 'openstack-hyper-v/openstack_hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-openstack_hyper_v"
