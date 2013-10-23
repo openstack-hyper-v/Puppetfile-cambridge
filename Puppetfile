@@ -60,3 +60,12 @@ mod 'openstack-hyper-v/packstack', :git => "#{base_url}/openstack-hyper-v/puppet
 
 mod 'openstack-hyper-v/basenode', :git => "#{base_url}/openstack-hyper-v/puppet-basenode"
 mod 'openstack-hyper-v/dell_openmanage', :git => "#{base_url}/openstack-hyper-v/puppet-dell_openmanage"
+mod 'openstack-hyper-v/docker', :git => "#{base_url}/openstack-hyper-v/puppet-docker"
+mod 'openstack-hyper-v/windows_common', :git => "#{base_url}/openstack-hyper-v/puppet-windows_common"
+mod 'openstack-hyper-v/windows_git', :git => "#{base_url}/openstack-hyper-v/puppet-windows_git"
+mod 'openstack-hyper-v/windows_7zip', :git => "#{base_url}/openstack-hyper-v/puppet-windows_7zip"
+mod 'openstack-hyper-v/windows_chrome', :git => "#{base_url}/openstack-hyper-v/puppet-windows_chrome"
+mod 'openstack-hyper-v/windows_java', :git => "#{base_url}/openstack-hyper-v/puppet-windows_java"
+mod 'openstack-hyper-v/windows_python', :git => "#{base_url}/openstack-hyper-v/puppet-windows_python"
+mod 'openstack-hyper-v/hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-hyper_v"
+
