@@ -47,6 +47,13 @@ mod 'ppouliot/dhcp', :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
 mod 'ppouliot/dns', :git => "#{base_url}/ppouliot/puppet-dns"
 mod 'openstack-hyper-v/ipam', :git => "#{base_url}/openstack-hyper-v/puppet-ipam"
 
+# Gitlab
+mod 'openstack-hyper-v/redis', :git => "#{base_url}/openstack-hyper-v/puppet-redis"
+mod 'puppetlabs/ruby', :git => "#{base_url}/puppetlabs/puppetlabs-ruby", :ref => 'master'
+mod 'puppetlabs/mysql', :git => "#{base_url}/puppetlabs/puppetlabs-mysql", :ref => '1.x'
+mod 'jfryman/nginx', :git=> "#{base_url}/jfryman/puppet-nginx"
+mod 'openstack-hyper-v/gitlab', :git=> "#{base_url}/openstack-hyper-v/puppet-gitlab"
+
 #
 mod 'openstack-hyper-v/petools', :git => "#{base_url}/openstack-hyper-v/puppet-petools"
 
