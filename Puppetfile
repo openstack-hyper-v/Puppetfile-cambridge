@@ -10,9 +10,9 @@ branch_name = 'origin/grizzly'
 #mod 'manifests', :git => "#{base_url}/openstack-hyper-v/puppet-manifests"
 
 # PuppetLabs
-mod 'puppetlabs/postgresql', :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
-#mod 'puppetlabs/puppetdb', :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
-mod 'puppetlabs/puppetdb', :git => "#{base_url}/openstack-hyper-v/puppetlabs-puppetdb"
+# Remove Postgresql because Puppetdb requires version 2.0
+#mod 'puppetlabs/postgresql', :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
+mod 'puppetlabs/puppetdb', :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
 mod 'puppetlabs/firewall', :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
 mod 'puppetlabs/ntp', :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
 mod 'puppetlabs/apache', :git => "#{base_url}/puppetlabs/puppetlabs-apache"
