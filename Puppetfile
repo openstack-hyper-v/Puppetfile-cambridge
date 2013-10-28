@@ -26,7 +26,8 @@ mod 'puppetlabs/registry', :git => "#{base_url}/puppetlabs/puppetlabs-registry"
 mod 'stephenjohrnson/puppet', :git => "#{base_url}/stephenrjohnson/puppetlabs-puppet", :ref => 'master'
 
 # upstream is ripienaar
-mod 'ripienaar/concat', :git => "#{base_url}/ripienaar/puppet-concat", :ref => 'master'
+mod 'puppetlabs/concat', :git => "#{base_url}/puppetlabs/puppetlabs-concat", :ref => 'master'
+#mod 'ripienaar/concat', :git => "#{base_url}/ripienaar/puppet-concat", :ref => 'master'
 
 # upstream is cprice-puppet/puppetlabs-inifile
 mod 'cprice404/inifile', :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
