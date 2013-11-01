@@ -63,6 +63,8 @@ mod 'openstack-hyper-v/petools', :git => "#{base_url}/openstack-hyper-v/puppet-p
 mod 'openstack-hyper-v/packstack', :git => "#{base_url}/openstack-hyper-v/puppet-packstack"
 
 # OpenStack Hyper-V Modules
+
+mod 'chocolatey/chocolatey', :git => "#{base_url}/chocolatey/puppet-chocolatey"
 mod 'puppetlabs/powershell', :git => "#{base_url}/joshcooper/puppetlabs-powershell"
 mod 'basti1302/windows-path', :git => "#{base_url}/basti1302/puppet-windows-path"
 mod 'openstack-hyper-v/openstack_hyper_v', :git => "#{base_url}/openstack-hyper-v/puppet-openstack_hyper_v"
