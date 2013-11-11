@@ -38,6 +38,9 @@ mod 'saz/rsyslog', :git => "#{base_url}/saz/puppet-rsyslog"
 # Upstream  Quartermaster
 mod 'openstack-hyper-v/quartermaster', :git => "#{base_url}/openstack-hyper-v/puppet-quartermaster"
 
+# OpenVPN
+mod 'luxflux/openvpn', :git => "#{base_url}/luxflux/puppet-openvpn"
+
 # Jenkins
 
 mod "rtyler/jenkins", :git => "#{base_url}/openstack-hyper-v/puppet-jenkins"
