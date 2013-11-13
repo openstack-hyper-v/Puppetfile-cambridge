@@ -13,6 +13,7 @@ branch_name = 'origin/grizzly'
 # Remove Postgresql because Puppetdb requires version 2.0
 #mod 'puppetlabs/postgresql', :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
 mod 'puppetlabs/puppetdb', :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
+mod 'puppetlabs/lvm', :git => "#{base_url}/puppetlabs/puppetlabs-lvm"
 mod 'puppetlabs/firewall', :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
 mod 'puppetlabs/ntp', :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
 mod 'puppetlabs/apache', :git => "#{base_url}/puppetlabs/puppetlabs-apache"
@@ -40,6 +41,7 @@ mod 'openstack-hyper-v/quartermaster', :git => "#{base_url}/openstack-hyper-v/pu
 
 # OpenVPN
 mod 'luxflux/openvpn', :git => "#{base_url}/luxflux/puppet-openvpn"
+mod 'thias/quagga', :git => "#{base_url}/thias/puppet-quagga"
 
 # Jenkins
 
