@@ -59,6 +59,7 @@ mod 'puppetlabs/ruby', :git => "#{base_url}/puppetlabs/puppetlabs-ruby", :ref =>
 mod 'puppetlabs/mysql', :git => "#{base_url}/puppetlabs/puppetlabs-mysql", :ref => '1.x'
 mod 'jfryman/nginx', :git=> "#{base_url}/jfryman/puppet-nginx"
 mod 'openstack-hyper-v/gitlab', :git=> "#{base_url}/openstack-hyper-v/puppet-gitlab"
+mod 'openstack-hyper-v/gitlab_server', :git=> "#{base_url}/openstack-hyper-v/puppet-gitlab_server"
 mod 'puppetlabs/vcsrepo', :git=> "#{base_url}/puppetlabs/puppetlabs-vcsrepo"
 
 #
