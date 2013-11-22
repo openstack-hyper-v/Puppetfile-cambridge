@@ -22,6 +22,8 @@ mod 'puppetlabs/apt', :git => "#{base_url}/puppetlabs/puppetlabs-apt"
 mod 'puppetlabs/vcsrepo', :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo"
 mod 'puppetlabs/mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers"
 mod 'puppetlabs/registry', :git => "#{base_url}/puppetlabs/puppetlabs-registry"
+#mod 'puppetlabs/java', :git => "#{base_url}/puppetlabs/puppetlabs-java"
+mod 'puppetlabs/java', :git => "#{base_url}/openstack-hyper-v/puppetlabs-java"
 
 # stephenrjohnson
 mod 'stephenjohrnson/puppet', :git => "#{base_url}/stephenrjohnson/puppetlabs-puppet", :ref => 'master'
@@ -45,7 +47,8 @@ mod 'thias/quagga', :git => "#{base_url}/thias/puppet-quagga"
 
 # Jenkins
 
-mod "rtyler/jenkins", :git => "#{base_url}/openstack-hyper-v/puppet-jenkins"
+#mod "rtyler/jenkins", :git => "#{base_url}/openstack-hyper-v/puppet-jenkins"
+mod "rtyler/jenkins", :git => "#{base_url}/jenkinsci/puppet-jenkins"
 
 # ipam
 mod 'ppouliot/dhcp', :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
