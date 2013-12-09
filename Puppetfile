@@ -49,6 +49,8 @@ mod 'thias/quagga', :git => "#{base_url}/thias/puppet-quagga"
 
 #mod "rtyler/jenkins", :git => "#{base_url}/openstack-hyper-v/puppet-jenkins"
 mod "rtyler/jenkins", :git => "#{base_url}/jenkinsci/puppet-jenkins"
+mod "stankevich/python", :git => "#{base_url}/stankevich/puppet-python"
+mod 'openstack-hyper-v/jenkins_job_builder', :git => "#{base_url}/openstack-hyper-v/puppet-jenkins_job_builder"
 
 # ipam
 mod 'ppouliot/dhcp', :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
