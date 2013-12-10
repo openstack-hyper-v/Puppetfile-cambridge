@@ -19,4 +19,3 @@ echo "commiting changes back to git"
 git add *
 git commit -m "Regenerating Puppetfile"
 git push origin master
-cd /etc/puppet && librarian-puppet install --verbose
