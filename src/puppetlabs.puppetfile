@@ -1,4 +1,12 @@
-mod 'puppetlabs/puppetdb',                 :git => "#{base_url}puppetlabs/puppetlabs-puppetdb" mod 'puppetlabs/lvm',                      :git => "#{base_url}puppetlabs/puppetlabs-lvm"
+##### Puppet Labs modules #####
+
+puppetlabs_repo_prefix = "#{base_url}/#{puppetlabs_module_account}/puppetlabs"
+
+#mod 'puppetlabs/mymodule', :git => "#{puppetlabs_repo_prefix}-mymodule", :ref => puppetlabs_module_branch
+
+
+mod 'puppetlabs/puppetdb',                 :git => "#{base_url}puppetlabs/puppetlabs-puppetdb"
+mod 'puppetlabs/lvm',                      :git => "#{base_url}puppetlabs/puppetlabs-lvm"
 mod 'puppetlabs/firewall',                 :git => "#{base_url}puppetlabs/puppetlabs-firewall"
 mod 'puppetlabs/ntp',                      :git => "#{base_url}puppetlabs/puppetlabs-ntp"
 mod 'puppetlabs/apache',                   :git => "#{base_url}puppetlabs/puppetlabs-apache"
