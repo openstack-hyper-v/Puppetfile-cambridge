@@ -94,7 +94,7 @@ mod 'puppetlabs/powershell',               :git => "#{base_url}joshcooper/puppet
 # mod 'stackforge/openstack', :git => "#{repo_prefix}-openstack", :ref => openstack_module_branch
 ##
 
-mod 'manifests',                           :git => "#{ssh_url}openstack-hyper-v/puppet-manifests"
+#mod 'manifests',                           :git => "#{ssh_url}openstack-hyper-v/puppet-manifests"
 mod 'openstack-hyper-v/quartermaster',     :git => "#{ssh_url}openstack-hyper-v/puppet-quartermaster"
 mod 'openstack-hyper-v/ipam',              :git => "#{ssh_url}openstack-hyper-v/puppet-ipam"
 mod 'openstack-hyper-v/redis',             :git => "#{ssh_url}openstack-hyper-v/puppet-redis"
