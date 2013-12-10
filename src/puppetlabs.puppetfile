@@ -1,0 +1,18 @@
+mod 'puppetlabs/puppetdb',                 :git => "#{base_url}puppetlabs/puppetlabs-puppetdb" mod 'puppetlabs/lvm',                      :git => "#{base_url}puppetlabs/puppetlabs-lvm"
+mod 'puppetlabs/firewall',                 :git => "#{base_url}puppetlabs/puppetlabs-firewall"
+mod 'puppetlabs/ntp',                      :git => "#{base_url}puppetlabs/puppetlabs-ntp"
+mod 'puppetlabs/apache',                   :git => "#{base_url}puppetlabs/puppetlabs-apache"
+mod 'puppetlabs/stdlib',                   :git => "#{base_url}puppetlabs/puppetlabs-stdlib"
+mod 'puppetlabs/apt',                      :git => "#{base_url}puppetlabs/puppetlabs-apt"
+mod 'puppetlabs/vcsrepo',                  :git => "#{base_url}puppetlabs/puppetlabs-vcsrepo"
+mod 'puppetlabs/mount_providers',          :git => "#{base_url}puppetlabs/puppetlabs-mount_providers"
+mod 'puppetlabs/registry',                 :git => "#{base_url}puppetlabs/puppetlabs-registry"
+mod 'puppetlabs/concat',                   :git => "#{base_url}puppetlabs/puppetlabs-concat", :ref => 'master'
+mod 'puppetlabs/ruby',                     :git => "#{base_url}puppetlabs/puppetlabs-ruby", :ref => 'master'
+mod 'puppetlabs/mysql',                    :git => "#{base_url}puppetlabs/puppetlabs-mysql", :ref => '1.x'
+mod 'puppetlabs/powershell',               :git => "#{base_url}joshcooper/puppetlabs-powershell"
+# In Active Modules
+#mod 'puppetlabs/postgresql',              :git => "#{base_url}puppetlabs/puppetlabs-postgresql"
+#mod 'puppetlabs/java',                    :git => "#{base_url}puppetlabs/puppetlabs-java"
+#mod 'puppetlabs/dhcp',                    :git => "#{base_url}puppetlabs/puppetlabs-dhcp"
+#mod 'puppetlabs/powershell',              :git => "#{base_url}joshcooper/puppetlabs-powershell"
