@@ -1,6 +1,8 @@
 #
 # This validates the formatting of the Puppetfile file
 #
+echo "Removing Outdated Puppetfile"
+rm -rf /etc/puppet/Puppetfile
 echo "Building the Puppetfile"
 cat src/header.txt > Puppetfile
 echo "Creating Puppetfile Settings"
