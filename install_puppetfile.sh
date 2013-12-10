@@ -14,7 +14,7 @@ cat src/openstack-hyper-v.modules >> Puppetfile
 echo "Adding all other modules to Puppetfile"
 cat src/misc.modules >> Puppetfile
 echo "Installing New Puppet file in /etc/puppet/Puppetfile"
-ln -fs `pwd`/Puppetfile /etc/puppet/Pupppetfile
+ln -f -s `pwd`/Puppetfile /etc/puppet/Pupppetfile
 echo "commiting changes back to git"
 git add *
 git commit -m "Regenerating Puppetfile"
