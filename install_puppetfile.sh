@@ -4,7 +4,7 @@
 echo "Building the Puppetfile"
 cat src/header.txt > Puppetfile
 echo "Creating Puppetfile Settings"
-cat src/settings.modules >> Puppetfile
+cat src/settings.puppetfile >> Puppetfile
 echo "Adding PuppetLabs modules to Puppetfile"
 cat src/puppetlabs.modules >> Puppetfile
 echo "Adding openstack-hyper-v modules to Puppetfile"
