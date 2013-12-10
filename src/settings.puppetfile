@@ -55,16 +55,3 @@ branch_name  = 'origin/grizzly'
 ##### Puppet Labs modules #####
 
 openstack_repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
-
-
-
-
-
-
-# This Puppetfile generates a working Quartermaster for generating all necessary images.
-#
-# Git Settings
-git_protocol = ENV['git_protocol'] || 'git'
-base_url     = "#{git_protocol}://github.com/"
-ssh_url      = "#{git_protocol}@github.com:"
-branch_name  = 'origin/grizzly'
