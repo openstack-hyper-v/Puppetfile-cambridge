@@ -26,3 +26,4 @@ mod 'openstack-hyper-v/windows_java',      :git => "#{ssh_url}openstack-hyper-v/
 mod 'openstack-hyper-v/windows_python',    :git => "#{ssh_url}openstack-hyper-v/puppet-windows_python"
 mod 'openstack-hyper-v/hyper_v',           :git => "#{ssh_url}openstack-hyper-v/puppet-hyper_v"
 mod 'openstack-hyper-v/network_switch',    :git => "#{ssh_url}openstack-hyper-v/puppet-network_switch"
+mod 'openstack-hyper-v/jenkins_job_builder', :git => "#{ssh_url}openstack-hyper-v/puppet-jenkins_job_builder"

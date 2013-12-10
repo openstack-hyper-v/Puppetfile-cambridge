@@ -17,3 +17,4 @@ mod 'jfryman/nginx',                       :git => "#{base_url}jfryman/puppet-ng
 mod 'chocolatey/chocolatey',               :git => "#{base_url}chocolatey/puppet-chocolatey"
 mod 'puppetlabs/powershell',               :git => "#{base_url}joshcooper/puppetlabs-powershell"
 mod 'basti1302/windows-path',              :git => "#{base_url}basti1302/puppet-windows-path"
+mod 'stankevich/python',                   :git => "#{base_url}/stankevich/puppet-python"
