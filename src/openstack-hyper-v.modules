@@ -28,3 +28,4 @@ mod 'openstack-hyper-v/hyper_v',             :git => "#{ssh_url}openstack-hyper-
 mod 'openstack-hyper-v/network_mgmt',        :git => "#{ssh_url}openstack-hyper-v/puppet-network_mgmt"
 mod 'openstack-hyper-v/jenkins',             :git => "#{ssh_url}openstack-hyper-v/puppet-jenkins"
 mod 'openstack-hyper-v/jenkins_job_builder', :git => "#{ssh_url}openstack-hyper-v/puppet-jenkins_job_builder"
+mod 'openstack-hyper-v/mingw',               :git => "#{ssh_url}openstack-hyper-v/puppet-mingw"
