@@ -19,6 +19,7 @@ mod 'puppetlabs/concat',                   :git => "#{base_url}puppetlabs/puppet
 mod 'puppetlabs/ruby',                     :git => "#{base_url}puppetlabs/puppetlabs-ruby", :ref => 'master'
 mod 'puppetlabs/mysql',                    :git => "#{base_url}puppetlabs/puppetlabs-mysql", :ref => '1.x'
 mod 'puppetlabs/powershell',               :git => "#{base_url}joshcooper/puppetlabs-powershell"
+mod 'puppetlabs/rabbitmq',                 :git => "#{base_url}puppetlabs/puppetlabs-rabbitmq"
 # In Active Modules
 #mod 'puppetlabs/postgresql',              :git => "#{base_url}puppetlabs/puppetlabs-postgresql"
 #mod 'puppetlabs/java',                    :git => "#{base_url}puppetlabs/puppetlabs-java"
