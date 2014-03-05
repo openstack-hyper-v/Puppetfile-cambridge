@@ -45,8 +45,8 @@ else
   manifest_branch = 'origin/master'
 end
 
-base_url     = "#{git_protocol}://github.com/"
-ssh_url      = "#{git_protocol}@github.com:"
+base_url     = "#{git_protocol}://github.com"
+ssh_url      = "#{git_protocol}://github.com"
 branch_name  = 'origin/grizzly'
 
 ###### Installer Manifests Example ##############
