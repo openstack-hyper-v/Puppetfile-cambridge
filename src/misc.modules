@@ -6,13 +6,16 @@
 # mod 'stackforge/openstack', :git => "#{repo_prefix}-openstack", :ref => openstack_module_branch
 ##
 
-mod 'puppet',        :git => "#{base_url}/stephenrjohnson/puppetlabs-puppet", :ref => 'master'
-mod 'inifile',       :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
+mod 'puppet',        :git => "#{base_url}/stephenrjohnson/puppetmodule", :ref => 'master'
+# Moved to Puppetlabs repo
+#mod 'inifile',       :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
 mod 'rsyslog',       :git => "#{base_url}/saz/puppet-rsyslog"
 mod 'openvpn',       :git => "#{base_url}/luxflux/puppet-openvpn"
 mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
-mod 'dhcp',          :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
-mod 'dns',           :git => "#{base_url}/ppouliot/puppet-dns"
+# Using upstream 
+#mod 'dhcp',          :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
+#mod 'dns',           :git => "#{base_url}/ppouliot/puppet-dns"
+mod 'dns',           :git => "#{base_url}/ajjahn/puppet-dns"
 mod 'nginx',         :git => "#{base_url}/jfryman/puppet-nginx"
 mod 'chocolatey',    :git => "#{base_url}/chocolatey/puppet-chocolatey"
 mod 'powershell',    :git => "#{base_url}/joshcooper/puppetlabs-powershell"

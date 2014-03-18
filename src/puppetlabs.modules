@@ -7,13 +7,14 @@ puppetlabs_repo_prefix = "#{base_url}/#{puppetlabs_module_account}/puppetlabs"
 
 mod 'apache',          :git => "#{base_url}/puppetlabs/puppetlabs-apache"
 mod 'apt',             :git => "#{base_url}/puppetlabs/puppetlabs-apt"
+mod 'dhcp',            :git => "#{base_url}/puppetlabs/puppetlabs-dhcp"
 mod 'concat',          :git => "#{base_url}/puppetlabs/puppetlabs-concat", :ref => 'master'
 mod 'firewall',        :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
+mod 'inifile',         :git => "#{base_url}/puppetlabs/puppetlabs-inifile"
 mod 'lvm',             :git => "#{base_url}/puppetlabs/puppetlabs-lvm"
 mod 'mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers"
 mod 'mysql',           :git => "#{base_url}/puppetlabs/puppetlabs-mysql", :ref => '1.x'
 mod 'ntp',             :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
-mod 'powershell',      :git => "#{base_url}/joshcooper/puppetlabs-powershell"
 mod 'puppetdb',        :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
 mod 'rabbitmq',        :git => "#{base_url}/puppetlabs/puppetlabs-rabbitmq"
 mod 'registry',        :git => "#{base_url}/puppetlabs/puppetlabs-registry"
@@ -25,5 +26,4 @@ mod 'xinetd',          :git => "#{base_url}/puppetlabs/puppetlabs-xinetd"
 # In Active Module
 #mod 'postgresql',      :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
 #mod 'java',            :git => "#{base_url}/puppetlabs/puppetlabs-java"
-#mod 'dhcp',            :git => "#{base_url}/puppetlabs/puppetlabs-dhcp"
 #mod 'powershell',      :git => "#{base_url}/joshcooper/puppetlabs-powershell"
