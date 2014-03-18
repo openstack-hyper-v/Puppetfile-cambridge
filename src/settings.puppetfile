@@ -41,7 +41,7 @@ else
   puppetlabs_module_account = 'puppetlabs'
   # manifests
   user_name = 'primeministerp'
-  release = 'grizzly'
+  release = 'havana'
   manifest_branch = 'origin/master'
 end
 
