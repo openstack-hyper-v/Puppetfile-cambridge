@@ -17,8 +17,9 @@ echo "Adding all other modules to Puppetfile"
 cat src/misc.modules >> Puppetfile
 echo "Installing New Puppet file in /etc/puppet/Puppetfile"
 ln -f -s `pwd`/Puppetfile /etc/puppet/Puppetfile
-echo "commiting changes back to git"
-git add *
-git commit -m "Regenerating Puppetfile"
-git push origin master
+# Remove commit back process as it's not really a good idea
+#echo "commiting changes back to git"
+#git add *
+#git commit -m "Regenerating Puppetfile"
+#git push origin master
 cd /etc/puppet && librarian-puppet install --verbose
