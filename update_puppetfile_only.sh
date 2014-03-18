@@ -11,6 +11,8 @@ echo "Adding PuppetLabs modules to Puppetfile"
 cat src/puppetlabs.modules >> Puppetfile
 echo "Adding openstack-hyper-v modules to Puppetfile"
 cat src/openstack-hyper-v.modules >> Puppetfile
+echo "Adding StackForge modules to Puppetfile"
+cat src/stackforge.modules >> Puppetfile
 echo "Adding all other modules to Puppetfile"
 cat src/misc.modules >> Puppetfile
 echo "Installing New Puppet file in /etc/puppet/Puppetfile"
