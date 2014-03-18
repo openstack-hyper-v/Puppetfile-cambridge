@@ -5,23 +5,25 @@ puppetlabs_repo_prefix = "#{base_url}/#{puppetlabs_module_account}/puppetlabs"
 #mod 'mymodule', :git => "#{puppetlabs_repo_prefix}-mymodule", :ref => puppetlabs_module_branch
 
 
-mod 'puppetdb',                 :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
-mod 'lvm',                      :git => "#{base_url}/puppetlabs/puppetlabs-lvm"
-mod 'firewall',                 :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
-mod 'ntp',                      :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
-mod 'apache',                   :git => "#{base_url}/puppetlabs/puppetlabs-apache"
-mod 'stdlib',                   :git => "#{base_url}/puppetlabs/puppetlabs-stdlib"
-mod 'apt',                      :git => "#{base_url}/puppetlabs/puppetlabs-apt"
-mod 'vcsrepo',                  :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo"
-mod 'mount_providers',          :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers"
-mod 'registry',                 :git => "#{base_url}/puppetlabs/puppetlabs-registry"
-mod 'concat',                   :git => "#{base_url}/puppetlabs/puppetlabs-concat", :ref => 'master'
-mod 'ruby',                     :git => "#{base_url}/puppetlabs/puppetlabs-ruby", :ref => 'master'
-mod 'mysql',                    :git => "#{base_url}/puppetlabs/puppetlabs-mysql", :ref => '1.x'
-mod 'powershell',               :git => "#{base_url}/joshcooper/puppetlabs-powershell"
-mod 'rabbitmq',                 :git => "#{base_url}/puppetlabs/puppetlabs-rabbitmq"
-# In Active Modules
-#mod 'postgresql',              :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
-#mod 'java',                    :git => "#{base_url}/puppetlabs/puppetlabs-java"
-#mod 'dhcp',                    :git => "#{base_url}/puppetlabs/puppetlabs-dhcp"
-#mod 'powershell',              :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+mod 'apache',          :git => "#{base_url}/puppetlabs/puppetlabs-apache"
+mod 'apt',             :git => "#{base_url}/puppetlabs/puppetlabs-apt"
+mod 'concat',          :git => "#{base_url}/puppetlabs/puppetlabs-concat", :ref => 'master'
+mod 'firewall',        :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
+mod 'lvm',             :git => "#{base_url}/puppetlabs/puppetlabs-lvm"
+mod 'mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers"
+mod 'mysql',           :git => "#{base_url}/puppetlabs/puppetlabs-mysql", :ref => '1.x'
+mod 'ntp',             :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
+mod 'powershell',      :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+mod 'puppetdb',        :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
+mod 'rabbitmq',        :git => "#{base_url}/puppetlabs/puppetlabs-rabbitmq"
+mod 'registry',        :git => "#{base_url}/puppetlabs/puppetlabs-registry"
+mod 'rsync',           :git => "#{base_url}/puppetlabs/puppetlabs-rsync"
+mod 'ruby',            :git => "#{base_url}/puppetlabs/puppetlabs-ruby", :ref => 'master'
+mod 'stdlib',          :git => "#{base_url}/puppetlabs/puppetlabs-stdlib"
+mod 'vcsrepo',         :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo"
+mod 'xinetd',          :git => "#{base_url}/puppetlabs/puppetlabs-xinetd"
+# In Active Module
+#mod 'postgresql',      :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
+#mod 'java',            :git => "#{base_url}/puppetlabs/puppetlabs-java"
+#mod 'dhcp',            :git => "#{base_url}/puppetlabs/puppetlabs-dhcp"
+#mod 'powershell',      :git => "#{base_url}/joshcooper/puppetlabs-powershell"

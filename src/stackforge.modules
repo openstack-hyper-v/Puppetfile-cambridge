@@ -2,11 +2,15 @@
 
 openstack_repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
 
-mod 'openstack', :git => "#{openstack_repo_prefix}-openstack", :ref => openstack_module_branch
-mod 'cinder',    :git => "#{openstack_repo_prefix}-cinder",    :ref => openstack_module_branch
-mod 'glance',    :git => "#{openstack_repo_prefix}-glance",    :ref => openstack_module_branch
-mod 'keystone',  :git => "#{openstack_repo_prefix}-keystone",  :ref => openstack_module_branch
-mod 'horizon',   :git => "#{openstack_repo_prefix}-horizon",   :ref => openstack_module_branch
-mod 'nova',      :git => "#{openstack_repo_prefix}-nova",      :ref => openstack_module_branch
-mod 'quantum',   :git => "#{openstack_repo_prefix}-quantum",   :ref => openstack_module_branch
-mod 'swift',     :git => "#{openstack_repo_prefix}-swift",     :ref => openstack_module_branch
+mod 'openstack',  :git => "#{openstack_repo_prefix}-openstack",  :ref => openstack_module_branch
+mod 'cinder',     :git => "#{openstack_repo_prefix}-cinder",     :ref => openstack_module_branch
+mod 'glance',     :git => "#{openstack_repo_prefix}-glance",     :ref => openstack_module_branch
+mod 'keystone',   :git => "#{openstack_repo_prefix}-keystone",   :ref => openstack_module_branch
+mod 'horizon',    :git => "#{openstack_repo_prefix}-horizon",    :ref => openstack_module_branch
+mod 'nova',       :git => "#{openstack_repo_prefix}-nova",       :ref => openstack_module_branch
+mod 'neutron',    :git => "#{openstack_repo_prefix}-neutron",    :ref => openstack_module_branch
+mod 'swift',      :git => "#{openstack_repo_prefix}-swift",      :ref => openstack_module_branch
+mod 'heat',       :git => "#{openstack_repo_prefix}-heat",       :ref => openstack_module_branch
+mod 'tempest',    :git => "#{openstack_repo_prefix}-tempest", :ref => openstack_module_branch
+# Middleware
+mod 'vswitch',    :git => "#{openstack_repo_prefix}-vswitch",    :ref => openstack_module_branch
