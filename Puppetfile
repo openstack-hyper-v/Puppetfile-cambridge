@@ -46,7 +46,7 @@ else
   puppetlabs_module_account = 'puppetlabs'
   # manifests
   user_name = 'primeministerp'
-  release = 'grizzly'
+  release = 'havana'
   manifest_branch = 'origin/master'
 end
 
@@ -67,26 +67,28 @@ puppetlabs_repo_prefix = "#{base_url}/#{puppetlabs_module_account}/puppetlabs"
 #mod 'mymodule', :git => "#{puppetlabs_repo_prefix}-mymodule", :ref => puppetlabs_module_branch
 
 
-mod 'puppetdb',                 :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
-mod 'lvm',                      :git => "#{base_url}/puppetlabs/puppetlabs-lvm"
-mod 'firewall',                 :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
-mod 'ntp',                      :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
-mod 'apache',                   :git => "#{base_url}/puppetlabs/puppetlabs-apache"
-mod 'stdlib',                   :git => "#{base_url}/puppetlabs/puppetlabs-stdlib"
-mod 'apt',                      :git => "#{base_url}/puppetlabs/puppetlabs-apt"
-mod 'vcsrepo',                  :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo"
-mod 'mount_providers',          :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers"
-mod 'registry',                 :git => "#{base_url}/puppetlabs/puppetlabs-registry"
-mod 'concat',                   :git => "#{base_url}/puppetlabs/puppetlabs-concat", :ref => 'master'
-mod 'ruby',                     :git => "#{base_url}/puppetlabs/puppetlabs-ruby", :ref => 'master'
-mod 'mysql',                    :git => "#{base_url}/puppetlabs/puppetlabs-mysql", :ref => '1.x'
-mod 'powershell',               :git => "#{base_url}/joshcooper/puppetlabs-powershell"
-mod 'rabbitmq',                 :git => "#{base_url}/puppetlabs/puppetlabs-rabbitmq"
-# In Active Modules
-#mod 'postgresql',              :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
-#mod 'java',                    :git => "#{base_url}/puppetlabs/puppetlabs-java"
-#mod 'dhcp',                    :git => "#{base_url}/puppetlabs/puppetlabs-dhcp"
-#mod 'powershell',              :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+mod 'apache',          :git => "#{base_url}/puppetlabs/puppetlabs-apache"
+mod 'apt',             :git => "#{base_url}/puppetlabs/puppetlabs-apt"
+mod 'concat',          :git => "#{base_url}/puppetlabs/puppetlabs-concat", :ref => 'master'
+mod 'firewall',        :git => "#{base_url}/puppetlabs/puppetlabs-firewall"
+mod 'lvm',             :git => "#{base_url}/puppetlabs/puppetlabs-lvm"
+mod 'mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers"
+mod 'mysql',           :git => "#{base_url}/puppetlabs/puppetlabs-mysql", :ref => '1.x'
+mod 'ntp',             :git => "#{base_url}/puppetlabs/puppetlabs-ntp"
+mod 'powershell',      :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+mod 'puppetdb',        :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb"
+mod 'rabbitmq',        :git => "#{base_url}/puppetlabs/puppetlabs-rabbitmq"
+mod 'registry',        :git => "#{base_url}/puppetlabs/puppetlabs-registry"
+mod 'rsync',           :git => "#{base_url}/puppetlabs/puppetlabs-rsync"
+mod 'ruby',            :git => "#{base_url}/puppetlabs/puppetlabs-ruby", :ref => 'master'
+mod 'stdlib',          :git => "#{base_url}/puppetlabs/puppetlabs-stdlib"
+mod 'vcsrepo',         :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo"
+mod 'xinetd',          :git => "#{base_url}/puppetlabs/puppetlabs-xinetd"
+# In Active Module
+#mod 'postgresql',      :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
+#mod 'java',            :git => "#{base_url}/puppetlabs/puppetlabs-java"
+#mod 'dhcp',            :git => "#{base_url}/puppetlabs/puppetlabs-dhcp"
+#mod 'powershell',      :git => "#{base_url}/joshcooper/puppetlabs-powershell"
 ##### OpenStack Hyper-V modules #####
 
 ##
@@ -125,14 +127,18 @@ mod 'sensu_server',        :git => "#{ssh_url}/openstack-hyper-v/puppet-sensu_se
 
 openstack_repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
 
-mod 'openstack', :git => "#{openstack_repo_prefix}-openstack", :ref => openstack_module_branch
-mod 'cinder',    :git => "#{openstack_repo_prefix}-cinder",    :ref => openstack_module_branch
-mod 'glance',    :git => "#{openstack_repo_prefix}-glance",    :ref => openstack_module_branch
-mod 'keystone',  :git => "#{openstack_repo_prefix}-keystone",  :ref => openstack_module_branch
-mod 'horizon',   :git => "#{openstack_repo_prefix}-horizon",   :ref => openstack_module_branch
-mod 'nova',      :git => "#{openstack_repo_prefix}-nova",      :ref => openstack_module_branch
-mod 'quantum',   :git => "#{openstack_repo_prefix}-quantum",   :ref => openstack_module_branch
-mod 'swift',     :git => "#{openstack_repo_prefix}-swift",     :ref => openstack_module_branch
+mod 'openstack',  :git => "#{openstack_repo_prefix}-openstack",  :ref => openstack_module_branch
+mod 'cinder',     :git => "#{openstack_repo_prefix}-cinder",     :ref => openstack_module_branch
+mod 'glance',     :git => "#{openstack_repo_prefix}-glance",     :ref => openstack_module_branch
+mod 'keystone',   :git => "#{openstack_repo_prefix}-keystone",   :ref => openstack_module_branch
+mod 'horizon',    :git => "#{openstack_repo_prefix}-horizon",    :ref => openstack_module_branch
+mod 'nova',       :git => "#{openstack_repo_prefix}-nova",       :ref => openstack_module_branch
+mod 'neutron',    :git => "#{openstack_repo_prefix}-neutron",    :ref => openstack_module_branch
+mod 'swift',      :git => "#{openstack_repo_prefix}-swift",      :ref => openstack_module_branch
+mod 'heat',       :git => "#{openstack_repo_prefix}-heat",       :ref => openstack_module_branch
+mod 'tempest',    :git => "#{openstack_repo_prefix}-tempest", :ref => openstack_module_branch
+# Middleware
+mod 'vswitch',    :git => "#{openstack_repo_prefix}-vswitch",    :ref => openstack_module_branch
 ##### Other modules #####
 
 ##
@@ -141,19 +147,24 @@ mod 'swift',     :git => "#{openstack_repo_prefix}-swift",     :ref => openstack
 # mod 'stackforge/openstack', :git => "#{repo_prefix}-openstack", :ref => openstack_module_branch
 ##
 
-mod 'puppet',              :git => "#{base_url}/stephenrjohnson/puppetlabs-puppet", :ref => 'master'
-mod 'inifile',                   :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
-mod 'rsyslog',                         :git => "#{base_url}/saz/puppet-rsyslog"
-mod 'openvpn',                     :git => "#{base_url}/luxflux/puppet-openvpn"
-mod 'quagga',                        :git => "#{base_url}/thias/puppet-quagga"
-mod 'dhcp',                       :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
-mod 'dns',                        :git => "#{base_url}/ppouliot/puppet-dns"
-mod 'nginx',                       :git => "#{base_url}/jfryman/puppet-nginx"
-mod 'chocolatey',               :git => "#{base_url}/chocolatey/puppet-chocolatey"
-mod 'powershell',               :git => "#{base_url}/joshcooper/puppetlabs-powershell"
-mod 'windows-path',              :git => "#{base_url}/basti1302/puppet-windows-path"
-mod 'python',                   :git => "#{base_url}/stankevich/puppet-python"
-mod 'networkdevice',                 :git => "#{base_url}/uniak/puppet-networkdevice"
-mod 'erlang',                      :git => "#{base_url}/garethr/garethr-erlang"
-mod 'sensu',                         :git => "#{base_url}/sensu/sensu-puppet"
-mod '/epel',                        :git => "#{base_url}/stahnma/puppet-module-epel"
+mod 'puppet',        :git => "#{base_url}/stephenrjohnson/puppetlabs-puppet", :ref => 'master'
+mod 'inifile',       :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
+mod 'rsyslog',       :git => "#{base_url}/saz/puppet-rsyslog"
+mod 'openvpn',       :git => "#{base_url}/luxflux/puppet-openvpn"
+mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
+mod 'dhcp',          :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
+mod 'dns',           :git => "#{base_url}/ppouliot/puppet-dns"
+mod 'nginx',         :git => "#{base_url}/jfryman/puppet-nginx"
+mod 'chocolatey',    :git => "#{base_url}/chocolatey/puppet-chocolatey"
+mod 'powershell',    :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+mod 'windows-path',  :git => "#{base_url}/basti1302/puppet-windows-path"
+mod 'python',        :git => "#{base_url}/stankevich/puppet-python"
+mod 'networkdevice', :git => "#{base_url}/uniak/puppet-networkdevice"
+mod 'erlang',        :git => "#{base_url}/garethr/garethr-erlang"
+mod 'sensu',         :git => "#{base_url}/sensu/sensu-puppet"
+mod 'epel',          :git => "#{base_url}/stahnma/puppet-module-epel"
+#To support the StackForge openstack modules from git
+mod 'sudu',          :git => "#{base_url}/saz/puppet-sudo"
+mod 'ssh',           :git => "#{base_url}/saz/puppet-ssh"
+mod 'memcached',     :git => "#{base_url}/saz/puppet-ssh"
+mod 'sysctl',        :git => "#{base_url}/duritong/puppet-sysctl"

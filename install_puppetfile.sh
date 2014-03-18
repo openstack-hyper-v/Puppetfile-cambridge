@@ -22,4 +22,4 @@ ln -f -s `pwd`/Puppetfile /etc/puppet/Puppetfile
 #git add *
 #git commit -m "Regenerating Puppetfile"
 #git push origin master
-cd /etc/puppet && librarian-puppet install --verbose
+cd /etc/puppet && r10k --verbose DEBUG puppetfile install
