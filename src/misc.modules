@@ -33,5 +33,7 @@ mod 'memcached',     :git => "#{base_url}/saz/puppet-ssh"
 mod 'sysctl',        :git => "#{base_url}/duritong/puppet-sysctl"
 mod 'puppi',         :git => "#{base_url}/example42/puppi"
 mod 'perl',          :git => "#{base_url}/example42/puppet-perl"
-#mod 'mariadb',       :git => "#{base_url}/NeCTAR-RC/puppet-mariadb"
+#mod 'mariadb',      :git => "#{base_url}/NeCTAR-RC/puppet-mariadb"
 mod 'galera',        :git => "#{base_url}/CiscoSystems/puppet-galera" 
+mod 'windows_domain_controller', :git => "#{base_url}/martezr/puppet-windows_domain_controller" 
+
