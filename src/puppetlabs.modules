@@ -13,7 +13,8 @@ mod 'firewall',        :git => "#{base_url}/puppetlabs/puppetlabs-firewall",    
 mod 'inifile',         :git => "#{base_url}/puppetlabs/puppetlabs-inifile",         :ref => 'master'
 mod 'lvm',             :git => "#{base_url}/puppetlabs/puppetlabs-lvm",             :ref => 'master'
 mod 'mount_providers', :git => "#{base_url}/puppetlabs/puppetlabs-mount_providers", :ref => 'master'
-mod 'mysql',           :git => "#{base_url}/puppetlabs/puppetlabs-mysql",           :ref => 'master'
+# Version 1.0.0 is currently required by Nginx  we need to verify that Nginx can use the newer sql bits.
+mod 'mysql',           :git => "#{base_url}/puppetlabs/puppetlabs-mysql",           :ref => '1.0.0'
 mod 'ntp',             :git => "#{base_url}/puppetlabs/puppetlabs-ntp",             :ref => 'master'
 mod 'puppetdb',        :git => "#{base_url}/puppetlabs/puppetlabs-puppetdb",        :ref => 'master'
 mod 'rabbitmq',        :git => "#{base_url}/puppetlabs/puppetlabs-rabbitmq",        :ref => 'master'
@@ -24,6 +25,6 @@ mod 'stdlib',          :git => "#{base_url}/puppetlabs/puppetlabs-stdlib",      
 mod 'vcsrepo',         :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo",         :ref => 'master'
 mod 'xinetd',          :git => "#{base_url}/puppetlabs/puppetlabs-xinetd",          :ref => 'master'
 # In Active Module
-#mod 'postgresql',      :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
+mod 'postgresql',      :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
 #mod 'java',            :git => "#{base_url}/puppetlabs/puppetlabs-java"
 #mod 'powershell',      :git => "#{base_url}/joshcooper/puppetlabs-powershell"
