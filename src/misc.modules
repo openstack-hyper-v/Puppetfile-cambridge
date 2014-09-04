@@ -8,15 +8,16 @@
 
 mod 'puppet',        :git => "#{base_url}/stephenrjohnson/puppetmodule", :ref => 'master'
 # Moved to Puppetlabs repo
-#mod 'inifile',       :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
+#mod 'inifile',      :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
 mod 'rsyslog',       :git => "#{base_url}/saz/puppet-rsyslog"
+mod 'php',          :git => "#{base_url}/saz/puppet-php"
 mod 'openvpn',       :git => "#{base_url}/luxflux/puppet-openvpn"
 mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
 # Using upstream 
-#mod 'dhcp',          :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
-#mod 'dns',           :git => "#{base_url}/ppouliot/puppet-dns"
+#mod 'dhcp',         :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
+#mod 'dns',          :git => "#{base_url}/ppouliot/puppet-dns"
 # Moving to Development Branch in OpenStack Hyper-V until we finish centos support
-#mod 'dns',           :git => "#{base_url}/ajjahn/puppet-dns"
+#mod 'dns',          :git => "#{base_url}/ajjahn/puppet-dns"
 mod 'nginx',         :git => "#{base_url}/jfryman/puppet-nginx"
 mod 'chocolatey',    :git => "#{base_url}/chocolatey/puppet-chocolatey"
 mod 'powershell',    :git => "#{base_url}/joshcooper/puppetlabs-powershell"

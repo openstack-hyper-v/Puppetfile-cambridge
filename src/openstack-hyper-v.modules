@@ -31,6 +31,7 @@ mod 'jenkins_job_builder', :git => "#{ssh_url}/openstack-hyper-v/puppet-jenkins_
 mod 'mingw',               :git => "#{ssh_url}/openstack-hyper-v/puppet-mingw"
 mod 'cloudbase_prep',      :git => "#{ssh_url}/openstack-hyper-v/puppet-cloudbase_prep"
 mod 'iphawk',              :git => "#{ssh_url}/openstack-hyper-v/puppet-iphawk"
+mod 'osticket',            :git => "#{ssh_url}/openstack-hyper-v/puppet-osticket"
 # Development Branch while adding centos support
 mod 'dns',                 :git => "#{ssh_url}/openstack-hyper-v/puppet-dns"
 mod 'sensu_server',        :git => "#{ssh_url}/openstack-hyper-v/puppet-sensu_server"
