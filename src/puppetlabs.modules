@@ -23,6 +23,7 @@ mod 'ruby',            :git => "#{base_url}/puppetlabs/puppetlabs-ruby",        
 mod 'stdlib',          :git => "#{base_url}/puppetlabs/puppetlabs-stdlib",          :ref => 'master'
 mod 'vcsrepo',         :git => "#{base_url}/puppetlabs/puppetlabs-vcsrepo",         :ref => 'master'
 mod 'xinetd',          :git => "#{base_url}/puppetlabs/puppetlabs-xinetd",          :ref => 'master'
+mod 'reboot',          :git => "#{base_url}/puppetlabs/puppetlabs-reboot",          :ref => 'master'
 # In Active Module
 mod 'postgresql',      :git => "#{base_url}/puppetlabs/puppetlabs-postgresql"
 #mod 'java',            :git => "#{base_url}/puppetlabs/puppetlabs-java"
