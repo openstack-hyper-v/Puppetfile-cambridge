@@ -38,4 +38,4 @@ mod 'perl',          :git => "#{base_url}/example42/puppet-perl"
 #mod 'mariadb',      :git => "#{base_url}/NeCTAR-RC/puppet-mariadb"
 mod 'galera',        :git => "#{base_url}/CiscoSystems/puppet-galera" 
 mod 'windows_domain_controller', :git => "#{base_url}/martezr/puppet-windows_domain_controller" 
-
+mod 'domain_membership',         :git => "#{base_url}/trlinkin/puppet-domain_membership" 
