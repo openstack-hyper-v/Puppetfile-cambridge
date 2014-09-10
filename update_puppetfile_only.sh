@@ -15,6 +15,8 @@ echo "Adding StackForge modules to Puppetfile"
 cat src/stackforge.modules >> Puppetfile
 echo "Adding rismoney's windows modules to Puppetfile"
 cat src/rismoney.modules >> Puppetfile
+echo "Adding insentia modules to Puppetfile"
+cat src/insentia.modules >> Puppetfile
 echo "Adding all other modules to Puppetfile"
 cat src/misc.modules >> Puppetfile
 echo "Installing New Puppet file in /etc/puppet/Puppetfile"

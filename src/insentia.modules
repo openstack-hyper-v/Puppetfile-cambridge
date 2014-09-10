@@ -1,0 +1,5 @@
+mod 'windows_sql',        :git => "#{base_url}/insentia/windows_sql" 
+mod 'windows_sharepoint', :git => "#{base_url}/insentia/windows_sharepoint" 
+mod 'windows_ad',         :git => "#{base_url}/insentia/windows_ad" 
+mod 'windows_services',   :git => "#{base_url}/insentia/windows_services" 
+mod 'windows_isos',       :git => "#{base_url}/insentia/windows_isos" 
