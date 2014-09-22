@@ -1,0 +1,9 @@
+# Support Module
+mod 'staging',          :git => "#{base_url}/nanliu/puppet-staging"          :tag => '1.0.0'
+mod 'transport',        :git => "#{base_url}/nanliu/puppet-transport"        :ref => 'master'
+mod 'lsb',              :git => "#{base_url}/nanliu/puppet-lsb"              :ref => 'master'
+mod 'git',              :git => "#{base_url}/nanliu/puppet-git"              :ref => 'master'
+mod 'export_resources', :git => "#{base_url}/nanliu/puppet-export_resources" :ref => 'master'
+mod 'hiera',           	:git => "#{base_url}/nanliu/puppet-hiera"            :ref => 'master'
+mod 'archive',        	:git => "#{base_url}/nanliu/puppet-archive"	     :ref => 'master'
+mod 'winrm',  	        :git => "#{base_url}/nanliu/puppet-winrm"            :ref => 'master'
