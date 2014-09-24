@@ -9,8 +9,6 @@
 mod 'puppet',        :git => "#{base_url}/stephenrjohnson/puppetmodule", :ref => 'master'
 # Moved to Puppetlabs repo
 #mod 'inifile',      :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
-mod 'rsyslog',       :git => "#{base_url}/saz/puppet-rsyslog"
-mod 'php',          :git => "#{base_url}/saz/puppet-php"
 mod 'openvpn',       :git => "#{base_url}/luxflux/puppet-openvpn"
 mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
 # Using upstream 
@@ -24,14 +22,9 @@ mod 'powershell',    :git => "#{base_url}/joshcooper/puppetlabs-powershell"
 mod 'windows-path',  :git => "#{base_url}/basti1302/puppet-windows-path"
 mod 'python',        :git => "#{base_url}/stankevich/puppet-python"
 mod 'networkdevice', :git => "#{base_url}/uniak/puppet-networkdevice"
-mod 'erlang',        :git => "#{base_url}/garethr/garethr-erlang"
-mod 'docker',        :git => "#{base_url}/garethr/garethr-docker"
 mod 'sensu',         :git => "#{base_url}/sensu/sensu-puppet"
 mod 'epel',          :git => "#{base_url}/stahnma/puppet-module-epel"
 #To support the StackForge openstack modules from git
-mod 'sudu',          :git => "#{base_url}/saz/puppet-sudo"
-mod 'ssh',           :git => "#{base_url}/saz/puppet-ssh"
-mod 'memcached',     :git => "#{base_url}/saz/puppet-memcached"
 mod 'sysctl',        :git => "#{base_url}/duritong/puppet-sysctl"
 mod 'puppi',         :git => "#{base_url}/example42/puppi"
 mod 'perl',          :git => "#{base_url}/example42/puppet-perl"
