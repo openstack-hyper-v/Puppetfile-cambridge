@@ -14,6 +14,7 @@ mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
 # Using upstream 
 #mod 'dhcp',         :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
 #mod 'dns',          :git => "#{base_url}/ppouliot/puppet-dns"
+mod 'profiles',      :git => "#{base_url}/ppouliot/puppet-profiles"
 # Moving to Development Branch in OpenStack Hyper-V until we finish centos support
 #mod 'dns',          :git => "#{base_url}/ajjahn/puppet-dns"
 mod 'nginx',         :git => "#{base_url}/jfryman/puppet-nginx"
