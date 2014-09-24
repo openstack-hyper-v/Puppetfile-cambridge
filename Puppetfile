@@ -60,6 +60,115 @@ branch_name  = 'origin/havana'
 ##### Puppet Labs modules #####
 
 openstack_repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
+mod 'erlang',        :git => "#{base_url}/garethr/garethr-erlang", :tag => '0.3.0'
+mod 'docker',        :git => "#{base_url}/garethr/garethr-docker"
+##### Hercules Team Augeas Providers #####
+##### These are Puppetlabs Endorsed Modules and Versions #####
+
+#mod 'mymodule', :git => "#{hercules-team_repo_prefix}-mymodule", :ref => hercules-team_module_branch
+
+# Puppetlabs Offically Supported Modules and Appropriate Version
+mod 'augeasproviders',          :git => "#{base_url}/hercules-team/augeasproviders",          :tag => 'v2.0.0'
+mod 'augeasproviders_shellvar',   :git => "#{base_url}/hercules-team/augeasproviders_shellvar",          :tag => '2.0.1'
+mod 'augeasproviders_sysctl',     :git => "#{base_url}/hercules-team/augeasproviders_sysctl",          :tag => '2.0.0'
+mod 'augeasproviders_ssh',        :git => "#{base_url}/hercules-team/augeasproviders_ssh",          :tag => '2.0.0'
+mod 'augeasproviders_pam',        :git => "#{base_url}/hercules-team/augeasproviders_pam",          :tag => '2.0.0'
+mod 'augeasproviders_mounttab',   :git => "#{base_url}/hercules-team/augeasproviders_mounttab",          :tag => '2.0.0'
+mod 'augeasproviders_grub',       :git => "#{base_url}/hercules-team/augeasproviders_grub",          :tag => '2.0.0'
+mod 'augeasproviders_base',       :git => "#{base_url}/hercules-team/augeasproviders_base",          :tag => '2.0.0'
+mod 'augeasproviders_nagios',     :git => "#{base_url}/hercules-team/augeasproviders_nagios",          :tag => '2.0.0'
+mod 'augeasproviders_apache',     :git => "#{base_url}/hercules-team/augeasproviders_apache",          :tag => '2.0.0'
+mod 'augeasproviders_syslog',     :git => "#{base_url}/hercules-team/augeasproviders_syslog",          :tag => '2.0.0'
+mod 'augeasproviders_postgresql', :git => "#{base_url}/hercules-team/augeasproviders_postgresql",          :tag => '2.0.0'
+mod 'augeasproviders_puppet',     :git => "#{base_url}/hercules-team/augeasproviders_puppet",          :tag => '2.0.0'
+mod 'windows_sql',        :git => "#{base_url}/insentia/windows_sql" 
+mod 'windows_sharepoint', :git => "#{base_url}/insentia/windows_sharepoint" 
+mod 'windows_ad',         :git => "#{base_url}/insentia/windows_ad" 
+mod 'windows_services',   :git => "#{base_url}/insentia/windows_services" 
+mod 'windows_isos',       :git => "#{base_url}/insentia/windows_isos" 
+##### Other modules #####
+
+##
+# Example Usage of the variable
+# repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
+# mod 'stackforge/openstack', :git => "#{repo_prefix}-openstack", :ref => openstack_module_branch
+##
+
+mod 'puppet',        :git => "#{base_url}/stephenrjohnson/puppetmodule", :ref => 'master'
+# Moved to Puppetlabs repo
+#mod 'inifile',      :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
+mod 'openvpn',       :git => "#{base_url}/luxflux/puppet-openvpn"
+mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
+# Using upstream 
+#mod 'dhcp',         :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
+#mod 'dns',          :git => "#{base_url}/ppouliot/puppet-dns"
+# Moving to Development Branch in OpenStack Hyper-V until we finish centos support
+#mod 'dns',          :git => "#{base_url}/ajjahn/puppet-dns"
+mod 'nginx',         :git => "#{base_url}/jfryman/puppet-nginx"
+mod 'chocolatey',    :git => "#{base_url}/chocolatey/puppet-chocolatey"
+mod 'powershell',    :git => "#{base_url}/joshcooper/puppetlabs-powershell"
+mod 'windows-path',  :git => "#{base_url}/basti1302/puppet-windows-path"
+mod 'python',        :git => "#{base_url}/stankevich/puppet-python"
+mod 'networkdevice', :git => "#{base_url}/uniak/puppet-networkdevice"
+mod 'sensu',         :git => "#{base_url}/sensu/sensu-puppet"
+mod 'epel',          :git => "#{base_url}/stahnma/puppet-module-epel"
+#To support the StackForge openstack modules from git
+mod 'sysctl',        :git => "#{base_url}/duritong/puppet-sysctl"
+mod 'puppi',         :git => "#{base_url}/example42/puppi"
+mod 'perl',          :git => "#{base_url}/example42/puppet-perl"
+#mod 'mariadb',      :git => "#{base_url}/NeCTAR-RC/puppet-mariadb"
+mod 'galera',        :git => "#{base_url}/CiscoSystems/puppet-galera" 
+mod 'windows_domain_controller', :git => "#{base_url}/martezr/puppet-windows_domain_controller" 
+mod 'domain_membership',         :git => "#{base_url}/trlinkin/puppet-domain_membership" 
+# Support Module
+mod 'staging',          :git => "#{base_url}/nanliu/puppet-staging",          :tag => '1.0.0'
+mod 'transport',        :git => "#{base_url}/nanliu/puppet-transport",        :ref => 'master'
+mod 'lsb',              :git => "#{base_url}/nanliu/puppet-lsb",              :ref => 'master'
+mod 'git',              :git => "#{base_url}/nanliu/puppet-git",              :ref => 'master'
+mod 'export_resources', :git => "#{base_url}/nanliu/puppet-export_resources", :ref => 'master'
+mod 'hiera',           	:git => "#{base_url}/nanliu/puppet-hiera",            :ref => 'master'
+mod 'archive',        	:git => "#{base_url}/nanliu/puppet-archive",	      :ref => 'master'
+mod 'winrm',  	        :git => "#{base_url}/nanliu/puppet-winrm",            :ref => 'master'
+##### OpenStack Hyper-V modules #####
+
+##
+# Example Usage of the variable
+# repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
+# mod 'stackforge/openstack', :git => "#{repo_prefix}-openstack", :ref => openstack_module_branch
+##
+
+#mod 'manifests',                            :git => "#{ssh_url}/openstack-hyper-v/puppet-manifests"
+mod 'quartermaster',       :git => "#{ssh_url}/openstack-hyper-v/puppet-quartermaster"
+mod 'ipam',                :git => "#{ssh_url}/openstack-hyper-v/puppet-ipam"
+mod 'redis',               :git => "#{ssh_url}/openstack-hyper-v/puppet-redis"
+mod 'gitlab',              :git => "#{ssh_url}/openstack-hyper-v/puppet-gitlab"
+mod 'gitlab_server',       :git => "#{ssh_url}/openstack-hyper-v/puppet-gitlab_server"
+mod 'petools',             :git => "#{ssh_url}/openstack-hyper-v/puppet-petools"
+mod 'packstack',           :git => "#{ssh_url}/openstack-hyper-v/puppet-packstack"
+mod 'openstack_hyper_v',   :git => "#{ssh_url}/openstack-hyper-v/puppet-openstack_hyper_v"
+mod 'basenode',            :git => "#{ssh_url}/openstack-hyper-v/puppet-basenode"
+mod 'dell_openmanage',     :git => "#{ssh_url}/openstack-hyper-v/puppet-dell_openmanage"
+# Depreciating Current Docker module for garethr-docker found in misc.modules
+#mod 'docker',              :git => "#{ssh_url}/openstack-hyper-v/puppet-docker"
+mod 'windows_common',      :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_common"
+mod 'windows_freerdp',     :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_freerdp"
+mod 'windows_git',         :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_git"
+mod 'windows_7zip',        :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_7zip"
+mod 'windows_chrome',      :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_chrome"
+mod 'java',                :git => "#{ssh_url}/openstack-hyper-v/puppetlabs-java"
+mod 'windows_python',      :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_python"
+mod 'hyper_v',             :git => "#{ssh_url}/openstack-hyper-v/puppet-hyper_v"
+mod 'network_mgmt',        :git => "#{ssh_url}/openstack-hyper-v/puppet-network_mgmt"
+mod 'jenkins',             :git => "#{ssh_url}/openstack-hyper-v/puppet-jenkins"
+mod 'jenkins_job_builder', :git => "#{ssh_url}/openstack-hyper-v/puppet-jenkins_job_builder"
+mod 'mingw',               :git => "#{ssh_url}/openstack-hyper-v/puppet-mingw"
+mod 'cloudbase_prep',      :git => "#{ssh_url}/openstack-hyper-v/puppet-cloudbase_prep"
+mod 'iphawk',              :git => "#{ssh_url}/openstack-hyper-v/puppet-iphawk"
+mod 'osticket',            :git => "#{ssh_url}/openstack-hyper-v/puppet-osticket"
+mod 'openwsman',           :git => "#{ssh_url}/openstack-hyper-v/puppet-openwsman"
+# Development Branch while adding centos support
+mod 'dns',                 :git => "#{ssh_url}/openstack-hyper-v/puppet-dns"
+mod 'sensu_server',        :git => "#{ssh_url}/openstack-hyper-v/puppet-sensu_server"
 ##### Puppet Labs modules #####
 
 puppetlabs_repo_prefix = "#{base_url}/#{puppetlabs_module_account}/puppetlabs"
@@ -94,45 +203,20 @@ mod 'rabbitmq',        :git => "#{base_url}/puppetlabs/puppetlabs-rabbitmq",    
 mod 'registry',        :git => "#{base_url}/puppetlabs/puppetlabs-registry",        :ref => 'master'
 mod 'rsync',           :git => "#{base_url}/puppetlabs/puppetlabs-rsync",           :ref => 'master'
 mod 'ruby',            :git => "#{base_url}/puppetlabs/puppetlabs-ruby",            :ref => 'master'
+mod 'tftp',            :git => "#{base_url}/puppetlabs/puppetlabs-tftp",            :ref => 'master'
 mod 'xinetd',          :git => "#{base_url}/puppetlabs/puppetlabs-xinetd",          :ref => 'master'
-##### OpenStack Hyper-V modules #####
-
-##
-# Example Usage of the variable
-# repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
-# mod 'stackforge/openstack', :git => "#{repo_prefix}-openstack", :ref => openstack_module_branch
-##
-
-#mod 'manifests',                            :git => "#{ssh_url}/openstack-hyper-v/puppet-manifests"
-mod 'quartermaster',       :git => "#{ssh_url}/openstack-hyper-v/puppet-quartermaster"
-mod 'ipam',                :git => "#{ssh_url}/openstack-hyper-v/puppet-ipam"
-mod 'redis',               :git => "#{ssh_url}/openstack-hyper-v/puppet-redis"
-mod 'gitlab',              :git => "#{ssh_url}/openstack-hyper-v/puppet-gitlab"
-mod 'gitlab_server',       :git => "#{ssh_url}/openstack-hyper-v/puppet-gitlab_server"
-mod 'petools',             :git => "#{ssh_url}/openstack-hyper-v/puppet-petools"
-mod 'packstack',           :git => "#{ssh_url}/openstack-hyper-v/puppet-packstack"
-mod 'openstack_hyper_v',   :git => "#{ssh_url}/openstack-hyper-v/puppet-openstack_hyper_v"
-mod 'basenode',            :git => "#{ssh_url}/openstack-hyper-v/puppet-basenode"
-mod 'dell_openmanage',     :git => "#{ssh_url}/openstack-hyper-v/puppet-dell_openmanage"
-# Depreciating Current Docker module for garethr-docker found in misc.modules
-#mod 'docker',              :git => "#{ssh_url}/openstack-hyper-v/puppet-docker"
-mod 'windows_common',      :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_common"
-mod 'windows_git',         :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_git"
-mod 'windows_7zip',        :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_7zip"
-mod 'windows_chrome',      :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_chrome"
-mod 'java',                :git => "#{ssh_url}/openstack-hyper-v/puppetlabs-java"
-mod 'windows_python',      :git => "#{ssh_url}/openstack-hyper-v/puppet-windows_python"
-mod 'hyper_v',             :git => "#{ssh_url}/openstack-hyper-v/puppet-hyper_v"
-mod 'network_mgmt',        :git => "#{ssh_url}/openstack-hyper-v/puppet-network_mgmt"
-mod 'jenkins',             :git => "#{ssh_url}/openstack-hyper-v/puppet-jenkins"
-mod 'jenkins_job_builder', :git => "#{ssh_url}/openstack-hyper-v/puppet-jenkins_job_builder"
-mod 'mingw',               :git => "#{ssh_url}/openstack-hyper-v/puppet-mingw"
-mod 'cloudbase_prep',      :git => "#{ssh_url}/openstack-hyper-v/puppet-cloudbase_prep"
-mod 'iphawk',              :git => "#{ssh_url}/openstack-hyper-v/puppet-iphawk"
-mod 'osticket',            :git => "#{ssh_url}/openstack-hyper-v/puppet-osticket"
-# Development Branch while adding centos support
-mod 'dns',                 :git => "#{ssh_url}/openstack-hyper-v/puppet-dns"
-mod 'sensu_server',        :git => "#{ssh_url}/openstack-hyper-v/puppet-sensu_server"
+mod 'win-cis',  		:git => "#{base_url}/rismoney/puppet-win-cis" 
+mod 'baremetal-windows', :git => "#{base_url}/rismoney/puppet-baremetal-windows"
+mod 'wsus',        	:git => "#{base_url}/rismoney/puppet-wsus" 
+mod 'windowsnetwork',    :git => "#{base_url}/rismoney/puppet-windowsnetwork" 
+mod 'winclusters', 	:git => "#{base_url}/rismoney/puppet-winclusters" 
+mod 'winsvc',           	:git => "#{base_url}/rismoney/puppet-winsvc"
+mod 'iis',             	:git => "#{base_url}/rismoney/puppet-iis"	
+mod 'rsyslog',  :git => "#{base_url}/saz/puppet-rsyslog",  :tag => '3.4.0' 
+mod 'php',      :git => "#{base_url}/saz/puppet-php"
+mod 'sudu',     :git => "#{base_url}/saz/puppet-sudo"
+mod 'ssh',      :git => "#{base_url}/saz/puppet-ssh"
+mod 'memcached' :git => "#{base_url}/saz/puppet-memcached"
 ###### stackforge openstack modules #####
 openstack_repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
 
@@ -153,51 +237,3 @@ mod 'tempest',    :git => "#{openstack_repo_prefix}-tempest",    :ref => opensta
 # Middleware
 mod 'vswitch',    :git => "#{openstack_repo_prefix}-vswitch",    :ref => openstack_module_branch
 
-mod 'puppet-win-cis',  		:git => "#{base_url}/rismoney/puppet-win-cis" 
-mod 'puppet-baremetal-windows', :git => "#{base_url}/rismoney/puppet-baremetal-windows"
-mod 'puppet-wsus',        	:git => "#{base_url}/rismoney/puppet-wsus" 
-mod 'puppet-windowsnetwork',    :git => "#{base_url}/rismoney/puppet-windowsnetwork" 
-mod 'puppet-winclusters', 	:git => "#{base_url}/rismoney/puppet-winclusters" 
-mod 'puppet-winsvc',           	:git => "#{base_url}/rismoney/puppet-winsvc"
-mod 'puppet-iis',             	:git => "#{base_url}/rismoney/puppet-iis"	
-##### Other modules #####
-
-##
-# Example Usage of the variable
-# repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
-# mod 'stackforge/openstack', :git => "#{repo_prefix}-openstack", :ref => openstack_module_branch
-##
-
-mod 'puppet',        :git => "#{base_url}/stephenrjohnson/puppetmodule", :ref => 'master'
-# Moved to Puppetlabs repo
-#mod 'inifile',      :git => "#{base_url}/cprice-puppet/puppetlabs-inifile"
-mod 'rsyslog',       :git => "#{base_url}/saz/puppet-rsyslog"
-mod 'php',          :git => "#{base_url}/saz/puppet-php"
-mod 'openvpn',       :git => "#{base_url}/luxflux/puppet-openvpn"
-mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
-# Using upstream 
-#mod 'dhcp',         :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
-#mod 'dns',          :git => "#{base_url}/ppouliot/puppet-dns"
-# Moving to Development Branch in OpenStack Hyper-V until we finish centos support
-#mod 'dns',          :git => "#{base_url}/ajjahn/puppet-dns"
-mod 'nginx',         :git => "#{base_url}/jfryman/puppet-nginx"
-mod 'chocolatey',    :git => "#{base_url}/chocolatey/puppet-chocolatey"
-mod 'powershell',    :git => "#{base_url}/joshcooper/puppetlabs-powershell"
-mod 'windows-path',  :git => "#{base_url}/basti1302/puppet-windows-path"
-mod 'python',        :git => "#{base_url}/stankevich/puppet-python"
-mod 'networkdevice', :git => "#{base_url}/uniak/puppet-networkdevice"
-mod 'erlang',        :git => "#{base_url}/garethr/garethr-erlang"
-mod 'docker',        :git => "#{base_url}/garethr/garethr-docker"
-mod 'sensu',         :git => "#{base_url}/sensu/sensu-puppet"
-mod 'epel',          :git => "#{base_url}/stahnma/puppet-module-epel"
-#To support the StackForge openstack modules from git
-mod 'sudu',          :git => "#{base_url}/saz/puppet-sudo"
-mod 'ssh',           :git => "#{base_url}/saz/puppet-ssh"
-mod 'memcached',     :git => "#{base_url}/saz/puppet-memcached"
-mod 'sysctl',        :git => "#{base_url}/duritong/puppet-sysctl"
-mod 'puppi',         :git => "#{base_url}/example42/puppi"
-mod 'perl',          :git => "#{base_url}/example42/puppet-perl"
-#mod 'mariadb',      :git => "#{base_url}/NeCTAR-RC/puppet-mariadb"
-mod 'galera',        :git => "#{base_url}/CiscoSystems/puppet-galera" 
-mod 'windows_domain_controller', :git => "#{base_url}/martezr/puppet-windows_domain_controller" 
-mod 'domain_membership',         :git => "#{base_url}/trlinkin/puppet-domain_membership" 
