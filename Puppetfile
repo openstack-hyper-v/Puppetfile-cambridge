@@ -60,7 +60,7 @@ branch_name  = 'origin/havana'
 ##### Puppet Labs modules #####
 
 openstack_repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
-mod 'erlang',        :git => "#{base_url}/garethr/garethr-erlang", :tag => '0.3.0'
+mod 'erlang',        :git => "#{base_url}/garethr/garethr-erlang"
 mod 'docker',        :git => "#{base_url}/garethr/garethr-docker"
 ##### Hercules Team Augeas Providers #####
 ##### These are Puppetlabs Endorsed Modules and Versions #####
@@ -102,11 +102,11 @@ mod 'quagga',        :git => "#{base_url}/thias/puppet-quagga"
 # Using upstream 
 #mod 'dhcp',         :git => "#{base_url}/ppouliot/puppetlabs-dhcp"
 #mod 'dns',          :git => "#{base_url}/ppouliot/puppet-dns"
+mod 'profiles',      :git => "#{base_url}/ppouliot/puppet-profiles"
 # Moving to Development Branch in OpenStack Hyper-V until we finish centos support
 #mod 'dns',          :git => "#{base_url}/ajjahn/puppet-dns"
 mod 'nginx',         :git => "#{base_url}/jfryman/puppet-nginx"
 mod 'chocolatey',    :git => "#{base_url}/chocolatey/puppet-chocolatey"
-mod 'powershell',    :git => "#{base_url}/joshcooper/puppetlabs-powershell"
 mod 'windows-path',  :git => "#{base_url}/basti1302/puppet-windows-path"
 mod 'python',        :git => "#{base_url}/stankevich/puppet-python"
 mod 'networkdevice', :git => "#{base_url}/uniak/puppet-networkdevice"
@@ -120,6 +120,8 @@ mod 'perl',          :git => "#{base_url}/example42/puppet-perl"
 mod 'galera',        :git => "#{base_url}/CiscoSystems/puppet-galera" 
 mod 'windows_domain_controller', :git => "#{base_url}/martezr/puppet-windows_domain_controller" 
 mod 'domain_membership',         :git => "#{base_url}/trlinkin/puppet-domain_membership" 
+# Zack/R10k
+mod 'r10k',                       :git => "#{base_url}/acidprime/r10k"
 # Support Module
 mod 'staging',          :git => "#{base_url}/nanliu/puppet-staging",          :tag => '1.0.0'
 mod 'transport',        :git => "#{base_url}/nanliu/puppet-transport",        :ref => 'master'
@@ -212,11 +214,11 @@ mod 'windowsnetwork',    :git => "#{base_url}/rismoney/puppet-windowsnetwork"
 mod 'winclusters', 	:git => "#{base_url}/rismoney/puppet-winclusters" 
 mod 'winsvc',           	:git => "#{base_url}/rismoney/puppet-winsvc"
 mod 'iis',             	:git => "#{base_url}/rismoney/puppet-iis"	
-mod 'rsyslog',  :git => "#{base_url}/saz/puppet-rsyslog",  :tag => '3.4.0' 
-mod 'php',      :git => "#{base_url}/saz/puppet-php"
-mod 'sudu',     :git => "#{base_url}/saz/puppet-sudo"
-mod 'ssh',      :git => "#{base_url}/saz/puppet-ssh"
-mod 'memcached' :git => "#{base_url}/saz/puppet-memcached"
+mod 'rsyslog',   :git => "#{base_url}/saz/puppet-rsyslog",  :tag => 'v3.4.0' 
+mod 'php',       :git => "#{base_url}/saz/puppet-php"
+mod 'sudu',      :git => "#{base_url}/saz/puppet-sudo"
+mod 'ssh',       :git => "#{base_url}/saz/puppet-ssh"
+mod 'memcached', :git => "#{base_url}/saz/puppet-memcached"
 ###### stackforge openstack modules #####
 openstack_repo_prefix = "#{base_url}/#{openstack_module_account}/puppet"
 
