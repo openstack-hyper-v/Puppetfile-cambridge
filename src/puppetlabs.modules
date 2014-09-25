@@ -34,3 +34,4 @@ mod 'rsync',           :git => "#{base_url}/puppetlabs/puppetlabs-rsync",       
 mod 'ruby',            :git => "#{base_url}/puppetlabs/puppetlabs-ruby",            :ref => 'master'
 mod 'tftp',            :git => "#{base_url}/puppetlabs/puppetlabs-tftp",            :ref => 'master'
 mod 'xinetd',          :git => "#{base_url}/puppetlabs/puppetlabs-xinetd",          :ref => 'master'
+mod 'git',             :git => "#{base_url}/puppetlabs/puppetlabs-git",          :ref => 'master'
